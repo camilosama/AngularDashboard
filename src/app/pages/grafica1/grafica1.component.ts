@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MultiDataSet, Label, Colors } from 'ng2-charts';
 
 @Component({
   selector: 'app-grafica1',
@@ -6,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class Grafica1Component implements OnInit {
+export class Grafica1Component  {
 
-  constructor() { }
+  tituloI = ['WEB','APP','TvSmart'];
+  titleI: string = "METODO";
+  tituloS = ['ANIME','VIDEOS','CARTAS'];
+  titleS: string = "DETALLE";
+  
 
-  ngOnInit(): void {
-  }
-
+  valorI = ['200','150','430'];
+  valorS = ['480','101','210'];
 }
